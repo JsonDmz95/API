@@ -13,63 +13,65 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
     <!-- Main styles -->
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="scss/main.css" />
   </head>
 
   <body>
     <!-- Header -->
     <header>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <nav class="navbar navbar-expand-md">
-              <!-- Logo -->
-              <a class="navbar-brand" href="#">
-                <img src="img/lorem.svg" class="img-fluid" alt="Alliance Processors Inc." />
-              </a>
-              <!-- End Logo -->
+      <div class="on-top-header">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <nav class="navbar navbar-expand-md">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                  <img src="img/api-logo.svg" class="img-fluid" alt="Alliance Processors Inc." />
+                </a>
+                <!-- End Logo -->
 
-              <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar top"></span>
-                <span class="icon-bar middle"></span>
-                <span class="icon-bar bottom"></span>
-              </button>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar top"></span>
+                  <span class="icon-bar middle"></span>
+                  <span class="icon-bar bottom"></span>
+                </button>
 
-              <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a href="#" class="nav-link" title="Home">Home<span class="sr-only">(current)</span></a>
-                  </li>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a href="#" class="nav-link" title="Home">Home<span class="sr-only">(current)</span></a>
+                    </li>
 
-                  <li class="nav-item">
-                    <a href="#" class="nav-link" title="About">About</a>
-                  </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link" title="About">About</a>
+                    </li>
 
-                  <li class="nav-item">
-                    <a href="#" class="nav-link" title="Gallery">Gallery</a>
-                  </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link" title="Gallery">Gallery</a>
+                    </li>
 
-                  <li class="nav-item">
-                    <a href="#" class="nav-link" title="Services">Services</a>
-                  </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link" title="Services">Services</a>
+                    </li>
 
-                  <li class="nav-item">
-                    <a href="#" class="nav-link" title="Contact">Contact</a>
-                  </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link" title="Contact">Contact</a>
+                    </li>
 
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Affiliates
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a href="#" class="nav-link" title="Grease Trap Services">Grease Trap Services</a>
-                      <a href="#" class="nav-link" title="Hood Cleaning">Hood Cleaning</a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </nav>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Affiliates
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a href="#" class="nav-link" title="Grease Trap Services">Grease Trap Services</a>
+                        <a href="#" class="nav-link" title="Hood Cleaning">Hood Cleaning</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
@@ -78,43 +80,47 @@
 
     <!-- Home banner -->
     <section class="home-banner">
-      <div class="container-fluid">
-        <!-- Veteran-Owned Business -->
-        <div class="veterans-owned">
+      <!-- Veteran-Owned Business -->
+      <div class="veterans-owned">
+        <div class="container-fluid">
           <div class="row justify-content-start">
             <div class="col col-lg-1">
-              <img src="img/Veteran-owned-business.svg" class="img-fluid" alt="Veteran-Owned Business" />
+              <div class="image-container">
+                <img src="img/veteran-owned-business.svg" class="img-fluid" alt="Veteran-Owned Business" />
+              </div>
             </div>
           </div>
         </div>
-        <!-- End Veteran-Owned Business -->
+      </div>
+      <!-- End Veteran-Owned Business -->
 
-        <!-- Title -->
-        <div class="title">
+      <!-- Title -->
+      <div class="title">
+        <div class="container-fluid">
           <div class="row justify-content-center">
             <div class="col-12 col-lg-6">
               <p class="text-center contact-us">Contact us today and help build a better world</p>
               <h1 class="text-center">Recycling for the future</h1>
-              <p class="text-center established">Established in 1964</p>
+              <p class="text-center established">Established in <span>1964</span></p>
             </div>
           </div>
 
           <div class="row justify-content-center">
-            <div class="col-12 col-lg-2">
+            <div class="col col-lg-2">
               <div class="button-container text-center">
-                <a href="#" class="btn btn-success" title="Call now">Call now</a>
+                <a href="#" class="btn btn-general" title="Call now">Call now</a>
               </div>
             </div>
 
-            <div class="col-12 col-lg-2">
+            <div class="col col-lg-2">
               <div class="button-container text-center">
-                <a href="#" class="btn btn-primary" title="More Info">More Info</a>
+                <a href="#" class="btn btn-general info" title="More Info">More Info</a>
               </div>
             </div>
           </div>
         </div>
-        <!-- End Title -->
       </div>
+      <!-- End Title -->
     </section>
     <!-- End Home banner -->
 

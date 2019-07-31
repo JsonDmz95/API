@@ -2,14 +2,15 @@
 /// This file contains all styles related to the button component.
 /// -----------------------------------------------------------------------------
 
-@mixin btn-style{
+@mixin btn-style {
   background-color: $btn-color;
-  color: $white;
-  padding: 8.5px 15px;
+  color: $text-color;
+  padding: 16.5px 15px;
   border: none;
-  border-radius: 0px;
+  border-radius: 500px;
 
   font-size: $buttons-font-size;
+  font-weight: bold;
   line-height: 1.5;
   text-decoration: none;
   text-align: center;
@@ -23,25 +24,30 @@
   white-space: -o-pre-wrap;
   word-wrap: break-word;
 
-  @include on-event{
+  box-shadow: 0px 5px 10px rgba($black, 0.2);
+
+  @include on-event {
     color: $white;
     background-color: shade($btn-color, 15%);
     text-decoration: none;
   }
 }
 
-
 /// Override buttons behavior
-.primary-button, .btn-default, .btn-general{
+.primary-button,
+.btn-default,
+.btn-general {
   @include btn-style;
 
-  &.active, &:active{
-    &.focus, &:focus, &:hover{
+  &.active,
+  &:active {
+    &.focus,
+    &:focus,
+    &:hover {
       @include btn-style;
     }
   }
 }
 
 @media (min-width: 768px) {
-
 }
