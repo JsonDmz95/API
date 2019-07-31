@@ -5,9 +5,8 @@
 .home-banner {
   background: url("../img/home-banner.png") $white no-repeat center center;
   background-size: cover;
-  height: 500px;
-  min-height: calc(100vh - 20px);
-  max-height: 1000px;
+  height: calc(100vh - 20px);
+  max-height: 650px;
   position: relative;
 
   .veterans-owned {
@@ -39,18 +38,17 @@
         text-shadow: 0px 5px 10px rgba($black, 0.3);
       }
 
-      &.established{
+      &.established {
         font-size: 22px;
         font-weight: 500;
         text-shadow: 0px 5px 10px rgba($black, 0.3);
         padding-top: 5px;
 
-        span{
+        span {
           color: $primary-color;
           font-weight: 800;
         }
       }
-     
     }
 
     h1 {
@@ -60,27 +58,143 @@
       text-shadow: 0px 5px 10px rgba($black, 0.3);
     }
 
-    .button-container{
+    .button-container {
       padding-top: 10px;
 
-      .btn-general{
+      .btn-general {
         width: 100%;
         max-width: 290px;
         margin: 0 auto;
-        
-        &.info{
-        background-color: $white;
+
+        &.info {
+          background-color: $white;
+
+          @include on-event {
+            color: $white;
+            background-color: $secondary-color;
+          }
         }
+      }
+    }
+  }
+
+  .drop-down {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -35px;
+    top: auto;
+
+    .go-down {
+      display: inline-block;
+      min-height: 90px;
+
+      @include on-event {
+        .drop {
+          -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+        }
+      }
+
+      .drop {
+        -webkit-animation: go_down 2.5s ease-in-out infinite;
+        animation: go_down 2.5s ease-in-out infinite;
       }
     }
   }
 }
 
 @media (min-width: 768px) {
+  .home-banner {
+    background-position: center bottom;
+    height: auto;
+    height: calc(100vh - 20px);
+    max-height: 850px;
+
+    .veterans-owned {
+      top: 150px;
+
+      .image-container {
+        text-align: left;
+        max-width: none;
+      }
+    }
+
+    .title {
+      top: 330px;
+
+      p {
+        &.contact-us {
+          font-size: 30px;
+        }
+
+        &.established {
+          font-size: 35px;
+          padding-top: 15px;
+        }
+      }
+
+      h1 {
+        font-size: 80px;
+
+        span {
+          display: block;
+        }
+      }
+
+      .button-container {
+        padding-top: 10px;
+
+        .btn-general {
+          max-width: 248px;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
 }
 
 @media (min-width: 1200px) {
+}
+
+@-webkit-keyframes go_down {
+  0% {
+    -webkit-transform: translateY(-25px);
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+
+  75% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 0;
+  }
+}
+
+@keyframes go_down {
+  0% {
+    -webkit-transform: translateY(-25px);
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+
+  75% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 0;
+  }
 }

@@ -28,7 +28,7 @@
 
   @include on-event {
     color: $white;
-    background-color: shade($btn-color, 15%);
+    background-color: $secondary-color;
     text-decoration: none;
   }
 }
