@@ -104,7 +104,7 @@ header {
         position: absolute;
         right: 0px;
         left: auto;
-        top: 108px;
+        top: 98px;
         bottom: auto;
 
         a {
@@ -389,6 +389,7 @@ header {
 
             .nav-link {
               padding: 0px;
+              margin-bottom: 10px;
               font-size: 18px;
               letter-spacing: letter-spacing(18px, 50);
 
@@ -402,32 +403,61 @@ header {
             }
 
             &.dropdown {
+              .dropdown-toggle {
+                &::after {
+                  display: none;
+                }
+              }
+
+              // Show on hover
+              &,
+              &.show {
+                @include on-event {
+                  .dropdown-menu {
+                    display: block;
+                  }
+                }
+              }
+
               .dropdown-menu {
                 background: $white;
-                top: calc(100% + 10px);
+                // top: calc(100% + 10px);
+                top: 100%;
                 border-radius: 20px;
                 right: 0px;
                 left: auto;
                 overflow: hidden;
                 padding: 0px;
 
+                margin-top: 0px;
+
                 .nav-link {
-                  padding: 7.5px 15px;
+                  padding: 10px 15px;
                   color: $text-color;
                   text-align: left;
                   white-space: nowrap;
+                  margin-bottom: 0px;
 
                   @include on-event {
                     background-color: $primary-color;
                     color: $text-color;
+
+                    &::before {
+                      display: none;
+                    }
                   }
 
                   &.active {
                     background-color: $primary-color;
                     color: $text-color;
 
-                    ::before {
+                    &::before {
                       display: none;
+                    }
+
+                    @include on-event {
+                      background-color: $secondary-color;
+                      color: $white;
                     }
                   }
                 }
@@ -446,12 +476,13 @@ header {
   header {
     .navbar-brand {
       max-width: none;
+      width: auto;
     }
 
     .navbar {
       .navbar-collapse {
         .call-us {
-          top: 138px;
+          top: 118px;
         }
       }
     }
@@ -513,6 +544,10 @@ header {
 @media (min-width: 1200px) {
   // basic header break
   header {
+    .navbar-brand {
+      margin-right: 25px;
+    }
+
     .navbar {
       .navbar-collapse {
         .call-us {
@@ -521,6 +556,21 @@ header {
           right: auto;
           padding-left: 25px;
           margin-bottom: -65px;
+        }
+      }
+    }
+
+    .navbar-expand-md {
+      .navbar-collapse {
+        ul.navbar-nav {
+          justify-content: center;
+
+          li.dropdown {
+            .dropdown-menu {
+              left: -20px;
+              right: auto;
+            }
+          }
         }
       }
     }
@@ -563,6 +613,7 @@ header {
               .dropdown-menu {
                 background: $white;
                 top: calc(100% + 10px);
+
                 .nav-link {
                   padding: 15px;
                   color: $text-color;
@@ -577,6 +628,36 @@ header {
   }
 
   // END OF basic header break
+}
+
+@media (min-width: 1400px) {
+  header {
+    .navbar-brand {
+      margin-right: 152px;
+    }
+
+    .navbar {
+      .navbar-collapse {
+        .call-us {
+          margin-left: 70px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  header {
+    .navbar-expand-md {
+      .navbar-collapse {
+        ul.navbar-nav {
+          li + li {
+            margin-left: 70px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @keyframes loading_down {
