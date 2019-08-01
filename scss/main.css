@@ -282,6 +282,56 @@ header .navbar .navbar-collapse {
   transition: all ease 0.5s;
 }
 
+header .navbar .navbar-collapse .call-us {
+  position: absolute;
+  right: 0px;
+  left: auto;
+  top: 108px;
+  bottom: auto;
+}
+
+header .navbar .navbar-collapse .call-us a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+header .navbar .navbar-collapse .call-us a:hover, header .navbar .navbar-collapse .call-us a:active, header .navbar .navbar-collapse .call-us a:focus {
+  color: #ffb900;
+  text-decoration: none;
+}
+
+header .navbar .navbar-collapse .call-us a.telephone #phone_circle {
+  fill: transparent;
+  -webkit-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
+}
+
+header .navbar .navbar-collapse .call-us a.telephone #phone_circle #phone_border {
+  fill: #fff;
+}
+
+header .navbar .navbar-collapse .call-us a.telephone #phone {
+  stroke: #fff;
+  -webkit-transition: stroke 0.3s ease;
+  transition: stroke 0.3s ease;
+}
+
+header .navbar .navbar-collapse .call-us a.telephone:hover #phone_circle, header .navbar .navbar-collapse .call-us a.telephone:active #phone_circle, header .navbar .navbar-collapse .call-us a.telephone:focus #phone_circle {
+  fill: #fff;
+}
+
+header .navbar .navbar-collapse .call-us a.telephone:hover #phone, header .navbar .navbar-collapse .call-us a.telephone:active #phone, header .navbar .navbar-collapse .call-us a.telephone:focus #phone {
+  stroke: #1d283a;
+}
+
+header .navbar .navbar-collapse .call-us p {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
 header .navbar .navbar-collapse ul.navbar-nav {
   padding: 30px 0px 30px 0px;
   opacity: 0;
@@ -459,6 +509,9 @@ header .navbar .navbar-collapse.collapsing ul {
 }
 
 @media (min-width: 768px) {
+  header .on-top-header {
+    padding-top: 10px;
+  }
   header .navbar-expand-md .navbar-toggler {
     display: none;
   }
@@ -532,6 +585,12 @@ header .navbar .navbar-collapse.collapsing ul {
 }
 
 @media (min-width: 992px) {
+  header .navbar-brand {
+    max-width: none;
+  }
+  header .navbar .navbar-collapse .call-us {
+    top: 138px;
+  }
   header .navbar-expand-lg .navbar-toggler {
     display: none;
   }
@@ -579,6 +638,13 @@ header .navbar .navbar-collapse.collapsing ul {
 }
 
 @media (min-width: 1200px) {
+  header .navbar .navbar-collapse .call-us {
+    position: static;
+    top: auto;
+    right: auto;
+    padding-left: 25px;
+    margin-bottom: -65px;
+  }
   header .navbar-expand-xl .navbar-toggler {
     display: none;
   }
@@ -1097,6 +1163,7 @@ header .navbar .navbar-collapse.collapsing ul {
   background: url("../img/home-banner.png") #fff no-repeat center center;
   background-size: cover;
   height: calc(100vh - 20px);
+  min-height: 580px;
   max-height: 650px;
   position: relative;
 }
@@ -1129,12 +1196,13 @@ header .navbar .navbar-collapse.collapsing ul {
 
 .home-banner .title p.contact-us {
   font-size: 20px;
-  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+  margin-bottom: 5px;
 }
 
 .home-banner .title p.established {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
   text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
   padding-top: 5px;
 }
@@ -1149,6 +1217,14 @@ header .navbar .navbar-collapse.collapsing ul {
   font-size: 36px;
   font-weight: 800;
   text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.home-banner .title h1 span {
+  display: block;
+}
+
+.home-banner .title h1 span.future {
+  font-size: 45px;
 }
 
 .home-banner .title .button-container {
@@ -1196,12 +1272,11 @@ header .navbar .navbar-collapse.collapsing ul {
 @media (min-width: 768px) {
   .home-banner {
     background-position: center bottom;
-    height: auto;
-    height: calc(100vh - 20px);
-    max-height: 850px;
+    max-height: 900px;
+    min-height: 865px;
   }
   .home-banner .veterans-owned {
-    top: 150px;
+    top: 120px;
   }
   .home-banner .veterans-owned .image-container {
     text-align: left;
@@ -1215,19 +1290,46 @@ header .navbar .navbar-collapse.collapsing ul {
   }
   .home-banner .title p.established {
     font-size: 35px;
-    padding-top: 15px;
+    padding-top: 20px;
   }
   .home-banner .title h1 {
     font-size: 80px;
   }
-  .home-banner .title h1 span {
-    display: block;
+  .home-banner .title h1 span.future {
+    font-size: 100px;
   }
   .home-banner .title .button-container {
     padding-top: 10px;
   }
   .home-banner .title .button-container .btn-general {
     max-width: 248px;
+  }
+}
+
+@media (min-width: 992px) {
+  .home-banner .veterans-owned {
+    top: 135px;
+  }
+  .home-banner .title {
+    top: 300px;
+  }
+  .home-banner .title .button-container {
+    padding-top: 10px;
+  }
+  .home-banner .title .button-container .btn-general {
+    max-width: 248px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home-banner {
+    max-height: 1045px;
+  }
+  .home-banner .title {
+    top: 245px;
+  }
+  .home-banner .title .button-container {
+    padding-top: 40px;
   }
 }
 

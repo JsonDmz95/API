@@ -6,6 +6,7 @@
   background: url("../img/home-banner.png") $white no-repeat center center;
   background-size: cover;
   height: calc(100vh - 20px);
+  min-height: 580px;
   max-height: 650px;
   position: relative;
 
@@ -35,12 +36,13 @@
 
       &.contact-us {
         font-size: 20px;
-        text-shadow: 0px 5px 10px rgba($black, 0.3);
+        text-shadow: 0px 5px 10px rgba($black, 0.8);
+        margin-bottom: 5px;
       }
 
       &.established {
         font-size: 22px;
-        font-weight: 500;
+        font-weight: 600;
         text-shadow: 0px 5px 10px rgba($black, 0.3);
         padding-top: 5px;
 
@@ -56,6 +58,14 @@
       font-size: 36px;
       font-weight: 800;
       text-shadow: 0px 5px 10px rgba($black, 0.3);
+
+      span {
+        display: block;
+
+        &.future {
+          font-size: 45px;
+        }
+      }
     }
 
     .button-container {
@@ -107,12 +117,11 @@
 @media (min-width: 768px) {
   .home-banner {
     background-position: center bottom;
-    height: auto;
-    height: calc(100vh - 20px);
-    max-height: 850px;
+    max-height: 900px;
+    min-height: 865px;
 
     .veterans-owned {
-      top: 150px;
+      top: 120px;
 
       .image-container {
         text-align: left;
@@ -130,7 +139,7 @@
 
         &.established {
           font-size: 35px;
-          padding-top: 15px;
+          padding-top: 20px;
         }
       }
 
@@ -138,7 +147,9 @@
         font-size: 80px;
 
         span {
-          display: block;
+          &.future {
+            font-size: 100px;
+          }
         }
       }
 
@@ -154,9 +165,37 @@
 }
 
 @media (min-width: 992px) {
+  .home-banner {
+    .veterans-owned {
+      top: 135px;
+    }
+
+    .title {
+      top: 300px;
+
+      .button-container {
+        padding-top: 10px;
+
+        .btn-general {
+          max-width: 248px;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 1200px) {
+  .home-banner {
+    max-height: 1045px;
+
+    .title {
+      top: 245px;
+
+      .button-container {
+        padding-top: 40px;
+      }
+    }
+  }
 }
 
 @-webkit-keyframes go_down {

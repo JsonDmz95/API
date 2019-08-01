@@ -100,6 +100,58 @@ header {
       transform-origin: top center;
       transition: all ease 0.5s;
 
+      .call-us {
+        position: absolute;
+        right: 0px;
+        left: auto;
+        top: 108px;
+        bottom: auto;
+
+        a {
+          color: $white;
+          font-size: 30px;
+          font-weight: bold;
+          white-space: nowrap;
+
+          @include on-event {
+            color: $primary-color;
+            text-decoration: none;
+          }
+
+          &.telephone {
+            #phone_circle {
+              fill: transparent;
+              transition: fill 0.3s ease;
+
+              #phone_border {
+                fill: $white;
+              }
+            }
+
+            #phone {
+              stroke: $white;
+              transition: stroke 0.3s ease;
+            }
+
+            @include on-event {
+              #phone_circle {
+                fill: $white;
+              }
+
+              #phone {
+                stroke: $text-color;
+              }
+            }
+          }
+        }
+
+        p {
+          color: $white;
+          font-size: 20px;
+          margin-bottom: 0px;
+        }
+      }
+
       ul.navbar-nav {
         padding: 30px 0px 30px 0px;
         opacity: 0;
@@ -298,6 +350,10 @@ header {
 @media (min-width: 768px) {
   // basic header break
   header {
+    .on-top-header {
+      padding-top: 10px;
+    }
+
     .navbar-expand-md {
       .navbar-toggler {
         display: none;
@@ -359,12 +415,12 @@ header {
                   padding: 7.5px 15px;
                   color: $text-color;
                   text-align: left;
-				  white-space: nowrap;
-				  
-				  @include on-event{
-					background-color: $primary-color;
+                  white-space: nowrap;
+
+                  @include on-event {
+                    background-color: $primary-color;
                     color: $text-color;
-				  }
+                  }
 
                   &.active {
                     background-color: $primary-color;
@@ -388,6 +444,18 @@ header {
 @media (min-width: 992px) {
   // basic header break
   header {
+    .navbar-brand {
+      max-width: none;
+    }
+
+    .navbar {
+      .navbar-collapse {
+        .call-us {
+          top: 138px;
+        }
+      }
+    }
+
     .navbar-expand-lg {
       .navbar-toggler {
         display: none;
@@ -445,6 +513,18 @@ header {
 @media (min-width: 1200px) {
   // basic header break
   header {
+    .navbar {
+      .navbar-collapse {
+        .call-us {
+          position: static;
+          top: auto;
+          right: auto;
+          padding-left: 25px;
+          margin-bottom: -65px;
+        }
+      }
+    }
+
     .navbar-expand-xl {
       .navbar-toggler {
         display: none;
