@@ -15,20 +15,24 @@ h2,
 h3,
 h4,
 h5 {
-  color: $primary-color;
-  font-weight: bold;
+  color: $text-color;
+  font-weight: 900;
   text-transform: none;
 }
 
-/// Main titles
-h1,
-.internals-titles {
-  text-transform: uppercase;
+h2{
+  font-size: 60px;
 }
+
+h3{
+  font-size: 30px;
+}
+
 
 /// Basic styles for text
 p {
   color: $text-color;
+  font-weight: 300;
   word-wrap: break-word;
 }
 

@@ -114,6 +114,41 @@
   }
 }
 
+.home-recycling {
+  padding-top: 70px;
+
+  h2 {
+    padding-bottom: 65px;
+
+    span {
+      display: block;
+    }
+  }
+
+  .card {
+    border-radius: 20px;
+    box-shadow: 5px 24px 40px 0px rgba(#505050, 0.2);
+    border: none;
+    background-color: transparent;
+    padding: 45px 55px;
+    margin-bottom: 45px;
+
+    h3 {
+      padding-bottom: 15px;
+    }
+
+    .button-container {
+      text-align: center;
+      padding-top: 35px;
+
+      .btn-general {
+        width: 100%;
+        max-width: 248px;
+      }
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .home-banner {
     background-position: center bottom;
@@ -182,6 +217,15 @@
       }
     }
   }
+
+  .home-recycling {
+    .card {
+      padding: 25px 35px;
+      margin-bottom: 0px;
+      min-height: 460px;
+      justify-content: space-between;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -194,6 +238,21 @@
       .button-container {
         padding-top: 40px;
       }
+    }
+  }
+
+  .home-recycling {
+    .card {
+      padding: 45px 55px;
+      min-height: 475px;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .home-recycling {
+    .card {
+      min-height: 375px;
     }
   }
 }

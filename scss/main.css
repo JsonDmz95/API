@@ -12,18 +12,22 @@ h2,
 h3,
 h4,
 h5 {
-  color: #ffb900;
-  font-weight: bold;
+  color: #1d283a;
+  font-weight: 900;
   text-transform: none;
 }
 
-h1,
-.internals-titles {
-  text-transform: uppercase;
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 30px;
 }
 
 p {
   color: #1d283a;
+  font-weight: 300;
   word-wrap: break-word;
 }
 
@@ -1313,6 +1317,42 @@ header .navbar .navbar-collapse.collapsing ul {
   animation: go_down 2.5s ease-in-out infinite;
 }
 
+.home-recycling {
+  padding-top: 70px;
+}
+
+.home-recycling h2 {
+  padding-bottom: 65px;
+}
+
+.home-recycling h2 span {
+  display: block;
+}
+
+.home-recycling .card {
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 24px 40px 0px rgba(80, 80, 80, 0.2);
+          box-shadow: 5px 24px 40px 0px rgba(80, 80, 80, 0.2);
+  border: none;
+  background-color: transparent;
+  padding: 45px 55px;
+  margin-bottom: 45px;
+}
+
+.home-recycling .card h3 {
+  padding-bottom: 15px;
+}
+
+.home-recycling .card .button-container {
+  text-align: center;
+  padding-top: 35px;
+}
+
+.home-recycling .card .button-container .btn-general {
+  width: 100%;
+  max-width: 248px;
+}
+
 @media (min-width: 768px) {
   .home-banner {
     background-position: center bottom;
@@ -1363,6 +1403,14 @@ header .navbar .navbar-collapse.collapsing ul {
   .home-banner .title .button-container .btn-general {
     max-width: 248px;
   }
+  .home-recycling .card {
+    padding: 25px 35px;
+    margin-bottom: 0px;
+    min-height: 460px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1374,6 +1422,16 @@ header .navbar .navbar-collapse.collapsing ul {
   }
   .home-banner .title .button-container {
     padding-top: 40px;
+  }
+  .home-recycling .card {
+    padding: 45px 55px;
+    min-height: 475px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .home-recycling .card {
+    min-height: 375px;
   }
 }
 
