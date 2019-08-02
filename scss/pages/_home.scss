@@ -116,6 +116,8 @@
 
 .home-recycling {
   padding-top: 70px;
+  position: relative;
+  z-index: 2;
 
   h2 {
     padding-bottom: 65px;
@@ -129,7 +131,7 @@
     border-radius: 20px;
     box-shadow: 5px 24px 40px 0px rgba(#505050, 0.2);
     border: none;
-    background-color: transparent;
+    background-color: $white;
     padding: 45px 55px;
     margin-bottom: 45px;
 
@@ -144,6 +146,44 @@
       .btn-general {
         width: 100%;
         max-width: 248px;
+      }
+    }
+  }
+}
+
+.home-drivers {
+  padding-top: 50px;
+
+  h2 {
+    font-size: 50px;
+    padding-bottom: 50px;
+  }
+
+  p {
+    font-size: 25px;
+
+    &::first-letter {
+      font-size: 100px;
+      line-height: 0.5;
+      margin-top: 5px;
+      float: left;
+    }
+  }
+
+  .image-container {
+    .drop-images {
+      margin-bottom: 30px;
+      max-width: 420px;
+      margin: 0 auto;
+
+      #drop_truck_mobile {
+        opacity: 0;
+        transform: translateY(-95px);
+      }
+
+      #drop_truck {
+        opacity: 0;
+        transform: translateY(-650px);
       }
     }
   }
@@ -226,6 +266,25 @@
       justify-content: space-between;
     }
   }
+
+  .home-drivers {
+    padding-top: 205px;
+
+    h2 {
+      font-size: 60px;
+    }
+
+    .information-container {
+      // padding-right: 130px;
+    }
+
+    .image-container {
+      .drop-images {
+        margin-bottom: 0px;
+        max-width: none;
+      }
+    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -245,6 +304,25 @@
     .card {
       padding: 45px 55px;
       min-height: 475px;
+    }
+  }
+
+  .home-drivers {
+    padding-top: 205px;
+
+    h2 {
+      font-size: 60px;
+    }
+
+    .information-container {
+      padding-right: 130px;
+    }
+
+    .image-container {
+      .drop-images {
+        position: absolute;
+        left: -85px;
+      }
     }
   }
 }

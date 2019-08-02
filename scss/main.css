@@ -1319,6 +1319,8 @@ header .navbar .navbar-collapse.collapsing ul {
 
 .home-recycling {
   padding-top: 70px;
+  position: relative;
+  z-index: 2;
 }
 
 .home-recycling h2 {
@@ -1334,7 +1336,7 @@ header .navbar .navbar-collapse.collapsing ul {
   -webkit-box-shadow: 5px 24px 40px 0px rgba(80, 80, 80, 0.2);
           box-shadow: 5px 24px 40px 0px rgba(80, 80, 80, 0.2);
   border: none;
-  background-color: transparent;
+  background-color: #fff;
   padding: 45px 55px;
   margin-bottom: 45px;
 }
@@ -1351,6 +1353,44 @@ header .navbar .navbar-collapse.collapsing ul {
 .home-recycling .card .button-container .btn-general {
   width: 100%;
   max-width: 248px;
+}
+
+.home-drivers {
+  padding-top: 50px;
+}
+
+.home-drivers h2 {
+  font-size: 50px;
+  padding-bottom: 50px;
+}
+
+.home-drivers p {
+  font-size: 25px;
+}
+
+.home-drivers p::first-letter {
+  font-size: 100px;
+  line-height: 0.5;
+  margin-top: 5px;
+  float: left;
+}
+
+.home-drivers .image-container .drop-images {
+  margin-bottom: 30px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.home-drivers .image-container .drop-images #drop_truck_mobile {
+  opacity: 0;
+  -webkit-transform: translateY(-95px);
+          transform: translateY(-95px);
+}
+
+.home-drivers .image-container .drop-images #drop_truck {
+  opacity: 0;
+  -webkit-transform: translateY(-650px);
+          transform: translateY(-650px);
 }
 
 @media (min-width: 768px) {
@@ -1411,6 +1451,16 @@ header .navbar .navbar-collapse.collapsing ul {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .home-drivers {
+    padding-top: 205px;
+  }
+  .home-drivers h2 {
+    font-size: 60px;
+  }
+  .home-drivers .image-container .drop-images {
+    margin-bottom: 0px;
+    max-width: none;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1426,6 +1476,19 @@ header .navbar .navbar-collapse.collapsing ul {
   .home-recycling .card {
     padding: 45px 55px;
     min-height: 475px;
+  }
+  .home-drivers {
+    padding-top: 205px;
+  }
+  .home-drivers h2 {
+    font-size: 60px;
+  }
+  .home-drivers .information-container {
+    padding-right: 130px;
+  }
+  .home-drivers .image-container .drop-images {
+    position: absolute;
+    left: -85px;
   }
 }
 
