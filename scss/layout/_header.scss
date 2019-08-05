@@ -15,6 +15,18 @@ header {
     width: 100%;
     // max-width: 200px;
     max-width: 140px;
+
+    img {
+      opacity: 1;
+      -webkit-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease;
+    }
+
+    @include on-event {
+      img {
+        opacity: 0.8;
+      }
+    }
   }
 
   .navbar {
@@ -25,9 +37,18 @@ header {
       padding: 0px;
       border-radius: 0px;
       border: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
       align-items: flex-start;
       -webkit-transition: all ease 0.3s;
       transition: all ease 0.3s;
@@ -40,6 +61,7 @@ header {
         width: 25px;
         -webkit-transition: all ease 0.3s;
         transition: all ease 0.3s;
+        -webkit-transform-origin: center center;
         transform-origin: center center;
 
         &.middle {
@@ -49,11 +71,13 @@ header {
         }
 
         &.top {
+          -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
           margin-bottom: -5.5px;
         }
 
         &.bottom {
+          -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
           margin-top: -5.5px;
         }
@@ -63,7 +87,9 @@ header {
         // justify-content: space-between;
 
         .icon-bar {
+          -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+          -webkit-transform-origin: center;
           transform-origin: center;
           width: 25px;
 
@@ -96,8 +122,11 @@ header {
       right: 0px;
       background: rgba(0, 0, 0, 0.9);
       height: 100% !important;
+      -webkit-transform: scale(0);
       transform: scale(0);
+      -webkit-transform-origin: top center;
       transform-origin: top center;
+      -webkit-transition: all ease 0.5s;
       transition: all ease 0.5s;
 
       .call-us {
@@ -121,6 +150,7 @@ header {
           &.telephone {
             #phone_circle {
               fill: transparent;
+              -webkit-transition: fill 0.3s ease;
               transition: fill 0.3s ease;
 
               #phone_border {
@@ -130,6 +160,7 @@ header {
 
             #phone {
               stroke: $white;
+              -webkit-transition: stroke 0.3s ease;
               transition: stroke 0.3s ease;
             }
 
@@ -157,10 +188,19 @@ header {
         opacity: 0;
         height: 100%;
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-transition: all ease 0.5s 0.5s;
         transition: all ease 0.5s 0.5s;
 
         li {
@@ -183,20 +223,28 @@ header {
               margin-bottom: 5px;
               background-color: $white;
 
+              -webkit-animation-name: loading_down;
+
               animation-name: loading_down;
+              -webkit-animation-duration: 1.5s;
               animation-duration: 1.5s;
+              -webkit-animation-iteration-count: infinite;
               animation-iteration-count: infinite;
+              -webkit-animation-direction: normal;
               animation-direction: normal;
 
               opacity: 0;
 
               &:nth-child(1) {
+                -webkit-animation-delay: 0.6s;
                 animation-delay: 0.6s;
               }
               &:nth-child(2) {
+                -webkit-animation-delay: 0.75s;
                 animation-delay: 0.75s;
               }
               &:nth-child(3) {
+                -webkit-animation-delay: 0.9s;
                 animation-delay: 0.9s;
               }
             }
@@ -211,6 +259,7 @@ header {
             color: $white;
             letter-spacing: letter-spacing(25px, 50);
             position: relative;
+            -webkit-transition: all ease 0.5s;
             transition: all ease 0.5s;
             text-align: center;
 
@@ -302,15 +351,22 @@ header {
         position: relative;
         height: auto !important;
         width: auto !important;
+        -webkit-transform: scale(1);
         transform: scale(1);
         background: transparent;
 
         ul.navbar-nav {
           height: auto;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
           flex-direction: row;
+          -webkit-box-pack: end;
+          -ms-flex-pack: end;
           justify-content: flex-end;
           padding: 0px;
           opacity: 1 !important;
+          -webkit-transition: none;
           transition: none;
 
           li {
@@ -363,16 +419,23 @@ header {
         position: relative;
         height: auto !important;
         width: auto !important;
+        -webkit-transform: scale(1);
         transform: scale(1);
         background: transparent;
         padding-bottom: 42px;
 
         ul.navbar-nav {
           height: auto;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
           flex-direction: row;
+          -webkit-box-pack: end;
+          -ms-flex-pack: end;
           justify-content: flex-end;
           padding: 0px;
           opacity: 1 !important;
+          -webkit-transition: none;
           transition: none;
 
           li {
@@ -496,15 +559,22 @@ header {
         position: relative;
         height: auto !important;
         width: auto !important;
+        -webkit-transform: scale(1);
         transform: scale(1);
         background: transparent;
 
         ul.navbar-nav {
           height: auto;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
           flex-direction: row;
+          -webkit-box-pack: end;
+          -ms-flex-pack: end;
           justify-content: flex-end;
           padding: 0px;
           opacity: 1 !important;
+          -webkit-transition: none;
           transition: none;
 
           li {
@@ -563,6 +633,8 @@ header {
     .navbar-expand-md {
       .navbar-collapse {
         ul.navbar-nav {
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
           justify-content: center;
 
           li.dropdown {
@@ -584,15 +656,22 @@ header {
         position: relative;
         height: auto !important;
         width: auto !important;
+        -webkit-transform: scale(1);
         transform: scale(1);
         background: transparent;
 
         ul.navbar-nav {
           height: auto;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
           flex-direction: row;
+          -webkit-box-pack: end;
+          -ms-flex-pack: end;
           justify-content: flex-end;
           padding: 0px;
           opacity: 1 !important;
+          -webkit-transition: none;
           transition: none;
 
           li {
@@ -657,6 +736,16 @@ header {
         }
       }
     }
+  }
+}
+
+@-webkit-keyframes loading_down {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
 
