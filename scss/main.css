@@ -757,6 +757,37 @@ header .navbar .navbar-collapse.collapsing ul {
   }
 }
 
+.prefooter {
+  background: url("../img/oil-background.png") #ffb900 no-repeat top center;
+  background-size: cover;
+  padding-top: 280px;
+  padding-bottom: 20px;
+}
+
+.prefooter h2 {
+  padding-bottom: 40px;
+}
+
+.prefooter p {
+  font-size: 25px;
+}
+
+@media (min-width: 768px) {
+  .prefooter {
+    padding-top: 200px;
+    padding-bottom: 185px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .prefooter h2 span {
+    display: block;
+  }
+  .prefooter p span {
+    display: block;
+  }
+}
+
 .primary-button,
 .btn-default,
 .btn-general {
@@ -1267,6 +1298,7 @@ header .navbar .navbar-collapse.collapsing ul {
 
 .home-drivers {
   padding-top: 50px;
+  padding-bottom: 15px;
 }
 
 .home-drivers h2 {
@@ -1430,6 +1462,7 @@ header .navbar .navbar-collapse.collapsing ul {
   }
   .home-drivers {
     padding-top: 205px;
+    padding-bottom: 160px;
   }
   .home-drivers h2 {
     font-size: 60px;

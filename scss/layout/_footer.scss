@@ -2,27 +2,59 @@
 /// This file contains all styles related to the footer of the site/application.
 /// -----------------------------------------------------------------------------
 
-footer{
+.prefooter {
+  background: url("../img/oil-background.png") $primary-color no-repeat top center;
+  background-size: cover;
+  padding-top: 280px;
+  padding-bottom: 20px;
+
+  h2 {
+    padding-bottom: 40px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+}
+
+footer {
   // background-color: $third-color;
 }
 
-.footer-top{
+.footer-top {
 }
 
-.footer-middle{
+.footer-middle {
 }
 
-.footer-bottom{
+.footer-bottom {
 }
 
 @media (min-width: 768px) {
-
+  .prefooter {
+    padding-top: 200px;
+    padding-bottom: 185px;
+  }
 }
 
 @media (min-width: 992px) {
-
 }
 
 @media (min-width: 1200px) {
+}
 
+@media (min-width: 1600px) {
+  .prefooter {
+    h2 {
+      span {
+        display: block;
+      }
+    }
+
+    p {
+      span {
+        display: block;
+      }
+    }
+  }
 }
