@@ -5,11 +5,12 @@
 .prefooter {
   background: url("../img/oil-background.png") $primary-color no-repeat top center;
   background-size: cover;
-  padding-top: 280px;
+  padding-top: 215px;
   padding-bottom: 20px;
 
   h2 {
     padding-bottom: 40px;
+    font-size: 40px;
   }
 
   p {
@@ -118,6 +119,10 @@ footer {
   .prefooter {
     padding-top: 200px;
     padding-bottom: 185px;
+
+    h2 {
+      font-size: 60px;
+    }
   }
 }
 
