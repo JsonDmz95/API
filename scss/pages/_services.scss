@@ -1,0 +1,187 @@
+.we-provide{
+    padding: 50px 0px;
+    position: relative;
+    z-index: 3;
+}
+
+.service{
+    padding: 150px 0px 0px;
+    position: relative;
+    max-width: 100%;
+    // overflow-x: hidden;
+
+    .service-title{
+        font-size: 60px;
+        margin-bottom: 50px;
+    }
+
+    .img-container{
+        
+        position: absolute;
+        
+        bottom: auto;
+        left: 0px;
+        right: 0px;
+
+        .service-img{
+            max-width: 320px;
+        }
+    }
+
+
+    &.recycling{
+        z-index: 2;
+        .img-container{
+            top: -90px;
+
+            .service-img{
+                margin-left: -67px;
+            }
+        }
+    }
+
+    &.biodiesel{
+        padding-top: 180px;
+        z-index: 1;
+        .service-text{
+            margin-bottom: 50px;
+        }
+        h3{
+            margin-top: 0px;
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+        .benefits-list{
+            margin-bottom: 0px;
+            list-style: none;
+            padding-left: 25px;
+            
+            li{
+                // line-height: 1.5px;
+                position: relative;
+                margin-bottom: 13px;
+
+                &::before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 2px;
+                    left: -25px;
+                    bottom: auto;
+                    right: auto;
+                    height: 20.78px;
+                    width: 13.03px;
+                    background-color: transparent;
+                    background-image: url("../img/oil-drop.svg");
+                }
+            }
+        }
+        .img-container{
+            top: 0px;
+
+            .service-img{
+               position: absolute;
+               right: 0px;
+               left: 0px;
+               top: -40px;
+               bottom: auto;
+               margin-right: 0px;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px){
+    .service{
+        padding-top: 60px;
+    }
+}
+
+@media (min-width: 768px){
+    .we-provide{
+        padding: 90px 0px;
+    }
+
+    .service{
+        .img-container{
+            .service-img{
+                max-width: none;
+            }
+        }
+
+        &.recycling{
+            .img-container{
+                top: -180px;
+    
+                .service-img{
+                    margin-left: -99px;
+                }
+            }
+        }
+
+        &.biodiesel{
+            padding-top: 220px;
+            .img-container{
+                .service-img{
+                   top: -45px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px){
+    .service.biodiesel{
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 1200px){
+    .service{
+
+        &.recycling{
+            padding-top: 40px;
+            .img-container{
+                top: -185px; 
+    
+                .service-img{
+                    margin-left: -150px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px){
+    .service{
+
+        &.recycling{
+            .img-container{
+                top: 0px;
+    
+                .service-img{
+                    position: absolute;
+                    margin-left: 0px;
+                    left: calc(50% - 850px);
+                    top: -200px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1678px){
+    .service{
+
+        &.recycling{
+            .img-container{
+    
+                .service-img{
+                    left: calc(50% - 945px);
+                    top: -185px;
+                }
+            }
+        }
+    }
+}
