@@ -1,6 +1,7 @@
 .we-provide{
     padding: 50px 0px;
-    
+    position: relative;
+    z-index: 3;
 }
 
 .service{
@@ -29,11 +30,63 @@
 
 
     &.recycling{
+        z-index: 2;
         .img-container{
             top: -90px;
 
             .service-img{
                 margin-left: -67px;
+            }
+        }
+    }
+
+    &.biodiesel{
+        padding-top: 180px;
+        z-index: 1;
+        .service-text{
+            margin-bottom: 50px;
+        }
+        h3{
+            margin-top: 0px;
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+        .benefits-list{
+            margin-bottom: 0px;
+            list-style: none;
+            padding-left: 25px;
+            
+            li{
+                // line-height: 1.5px;
+                position: relative;
+                margin-bottom: 13px;
+
+                &::before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 2px;
+                    left: -25px;
+                    bottom: auto;
+                    right: auto;
+                    height: 20.78px;
+                    width: 13.03px;
+                    background-color: transparent;
+                    background-image: url("../img/oil-drop.svg");
+                }
+            }
+        }
+        .img-container{
+            top: 0px;
+
+            .service-img{
+               position: absolute;
+               right: 0px;
+               left: 0px;
+               top: -40px;
+               bottom: auto;
+               margin-right: 0px;
             }
         }
     }
@@ -66,6 +119,21 @@
                 }
             }
         }
+
+        &.biodiesel{
+            padding-top: 220px;
+            .img-container{
+                .service-img{
+                   top: -45px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px){
+    .service.biodiesel{
+        margin-bottom: 100px;
     }
 }
 

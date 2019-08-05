@@ -1653,6 +1653,8 @@ footer {
 
 .we-provide {
   padding: 50px 0px;
+  position: relative;
+  z-index: 3;
 }
 
 .service {
@@ -1677,12 +1679,70 @@ footer {
   max-width: 320px;
 }
 
+.service.recycling {
+  z-index: 2;
+}
+
 .service.recycling .img-container {
   top: -90px;
 }
 
 .service.recycling .img-container .service-img {
   margin-left: -67px;
+}
+
+.service.biodiesel {
+  padding-top: 180px;
+  z-index: 1;
+}
+
+.service.biodiesel .service-text {
+  margin-bottom: 50px;
+}
+
+.service.biodiesel h3 {
+  margin-top: 0px;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.service.biodiesel .benefits-list {
+  margin-bottom: 0px;
+  list-style: none;
+  padding-left: 25px;
+}
+
+.service.biodiesel .benefits-list li {
+  position: relative;
+  margin-bottom: 13px;
+}
+
+.service.biodiesel .benefits-list li::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: -25px;
+  bottom: auto;
+  right: auto;
+  height: 20.78px;
+  width: 13.03px;
+  background-color: transparent;
+  background-image: url("../img/oil-drop.svg");
+}
+
+.service.biodiesel .img-container {
+  top: 0px;
+}
+
+.service.biodiesel .img-container .service-img {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: -40px;
+  bottom: auto;
+  margin-right: 0px;
 }
 
 @media (min-width: 576px) {
@@ -1703,6 +1763,18 @@ footer {
   }
   .service.recycling .img-container .service-img {
     margin-left: -99px;
+  }
+  .service.biodiesel {
+    padding-top: 220px;
+  }
+  .service.biodiesel .img-container .service-img {
+    top: -45px;
+  }
+}
+
+@media (min-width: 992px) {
+  .service.biodiesel {
+    margin-bottom: 100px;
   }
 }
 
