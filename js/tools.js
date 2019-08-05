@@ -38,6 +38,7 @@ $(window).scroll(function() {
     }
   });
 });
+
 $(".scroll-to, .navbar-nav li a, .local-scroll").click(function(e) {
   var jump = $(this).attr("href");
   var position = $(jump).offset();
@@ -79,7 +80,7 @@ $(".scroll-to, .navbar-nav li a, .local-scroll").click(function(e) {
       .on("slide.bs.carousel", function(e) {
         var nextH = $(e.relatedTarget).height();
         $(this)
-          .find(".item.active")
+          .find(".carousel-item.active")
           .parent()
           .animate(
             {

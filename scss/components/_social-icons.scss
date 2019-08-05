@@ -3,12 +3,7 @@
 /// -----------------------------------------------------------------------------
 
 /// Social icons container
-.social-icons{
-  // display: inline-block;
-}
-
-/// Social icons container
-.social-items{
+.social-items {
   margin: 0px;
   padding: 0px;
 
@@ -27,22 +22,22 @@
   -ms-flex-pack: center;
   justify-content: center;
 
-  li{
+  li {
     padding-left: 5px;
     padding-right: 5px;
 
-    &:first-child{
+    &:first-child {
       padding-left: 0px;
     }
 
-    &:last-child{
+    &:last-child {
       padding-right: 0px;
     }
   }
 }
 
 /// Social icons links
-.custom-social{
+.custom-social {
   font-size: 24px;
   color: $white;
   background-color: $primary-color;
@@ -70,71 +65,71 @@
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 
-  @include on-event{
+  @include on-event {
     color: $white;
     background-color: $hover-color;
     text-decoration: none;
   }
 }
 
-.facebook-icon{
-  @include on-event{
+.facebook-icon {
+  @include on-event {
     color: $white;
     background: #3d5b9b;
     border: 1px solid #3d5b9b;
   }
 }
 
-.twitter-icon{
-  @include on-event{
+.twitter-icon {
+  @include on-event {
     color: $white;
     background: #61a9db;
     border: 1px solid #61a9db;
   }
 }
 
-.linkedin-icon{
-  @include on-event{
+.linkedin-icon {
+  @include on-event {
     color: $white;
     background: #0e76b5;
     border: 1px solid #0e76b5;
   }
 }
 
-.youtube-icon{
-  @include on-event{
+.youtube-icon {
+  @include on-event {
     color: $white;
     background: #e52e2a;
     border: 1px solid #e52e2a;
   }
 }
 
-.instagram-icon{
-  @include on-event{
+.instagram-icon {
+  @include on-event {
     color: $white;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285aeb 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
     border: 1px solid #fd5949;
   }
 }
 
-.pinterest-icon{
-  @include on-event{
+.pinterest-icon {
+  @include on-event {
     color: $white;
     background: #cb2027;
     border: 1px solid #cb2027;
   }
 }
 
-.rss-icon{
-  @include on-event{
+.rss-icon {
+  @include on-event {
     color: $white;
     background: linear-gradient(135deg, #ff4d03 20%, #ffb67c 40%, #ff4d03 100%);
     border: 1px solid #ff4d03;
   }
 }
 
-.glassdoor-icon{
-  @include on-event{
+.glassdoor-icon {
+  @include on-event {
     color: $white;
     background: #7cb229;
     border: 1px solid #7cb229;

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Barlow:300,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Barlow:300,300i,400,600,700,800,900&display=swap");
 body {
   background-color: #fff;
   font-family: "Barlow", sans-serif;
@@ -871,96 +871,6 @@ header .navbar .navbar-collapse.collapsing ul {
   text-decoration: none;
 }
 
-.carousel-fade .carousel-inner .item {
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-}
-
-.carousel-fade .carousel-inner .item,
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  opacity: 0;
-}
-
-.carousel-fade .carousel-inner .active,
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-
-.carousel-fade .carousel-inner .next,
-.carousel-fade .carousel-inner .prev,
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.custom-carousel {
-  background-color: #fff;
-}
-
-.custom-carousel .indicators-container {
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  bottom: 10px;
-  top: auto;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.custom-carousel .indicators-container .carousel-indicators {
-  left: 0px;
-  right: 0px;
-  text-align: center;
-  width: auto;
-  margin: 0px 15px;
-  bottom: 0px;
-}
-
-.custom-carousel .indicators-container .carousel-indicators li {
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #ffb900;
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
-  margin: 0px 5px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.custom-carousel .indicators-container .carousel-indicators li:hover, .custom-carousel .indicators-container .carousel-indicators li:active, .custom-carousel .indicators-container .carousel-indicators li:focus {
-  background-color: rgba(255, 185, 0, 0.5);
-}
-
-.custom-carousel .indicators-container .carousel-indicators .active, .custom-carousel .indicators-container .carousel-indicators .active:hover, .custom-carousel .indicators-container .carousel-indicators .active:active, .custom-carousel .indicators-container .carousel-indicators .active:focus {
-  background-color: #ffb900;
-  border: 1px solid #ffb900;
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
-}
-
-@media (min-width: 768px) {
-  .custom-carousel .indicators-container {
-    width: 750px;
-  }
-}
-
-@media (min-width: 992px) {
-  .custom-carousel .indicators-container {
-    width: 970px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .custom-carousel .indicators-container {
-    width: 1170px;
-  }
-}
-
 .social-items {
   margin: 0px;
   padding: 0px;
@@ -1334,7 +1244,7 @@ header .navbar .navbar-collapse.collapsing ul {
 .home-recycling .card {
   border-radius: 20px;
   -webkit-box-shadow: 5px 24px 40px 0px rgba(80, 80, 80, 0.2);
-          box-shadow: 5px 24px 40px 0px rgba(80, 80, 80, 0.2);
+  box-shadow: 5px 24px 40px 0px rgba(80, 80, 80, 0.2);
   border: none;
   background-color: #fff;
   padding: 45px 55px;
@@ -1368,11 +1278,62 @@ header .navbar .navbar-collapse.collapsing ul {
   font-size: 25px;
 }
 
-.home-drivers p::first-letter {
+.home-drivers p.capital-paragraph::first-letter {
   font-size: 100px;
   line-height: 0.5;
   margin-top: 5px;
   float: left;
+}
+
+.home-drivers .carousel {
+  padding-top: 35px;
+}
+
+.home-drivers .carousel .col-chevron {
+  width: 17px;
+  position: relative;
+}
+
+.home-drivers .carousel .carousel-item {
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+}
+
+.home-drivers .carousel .carousel-control-next,
+.home-drivers .carousel .carousel-control-prev {
+  opacity: 1;
+  width: auto;
+}
+
+.home-drivers .carousel .carousel-control-next a,
+.home-drivers .carousel .carousel-control-prev a {
+  color: #1d283a;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.home-drivers .carousel .carousel-control-next a img,
+.home-drivers .carousel .carousel-control-prev a img {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.home-drivers .carousel .carousel-control-next a:hover img, .home-drivers .carousel .carousel-control-next a:active img, .home-drivers .carousel .carousel-control-next a:focus img,
+.home-drivers .carousel .carousel-control-prev a:hover img,
+.home-drivers .carousel .carousel-control-prev a:active img,
+.home-drivers .carousel .carousel-control-prev a:focus img {
+  opacity: 0.8;
+}
+
+.home-drivers .carousel p.testimonial {
+  font-style: italic;
+}
+
+.home-drivers .carousel p.name {
+  font-weight: normal;
 }
 
 .home-drivers .image-container .drop-images {
@@ -1384,13 +1345,13 @@ header .navbar .navbar-collapse.collapsing ul {
 .home-drivers .image-container .drop-images #drop_truck_mobile {
   opacity: 0;
   -webkit-transform: translateY(-95px);
-          transform: translateY(-95px);
+  transform: translateY(-95px);
 }
 
 .home-drivers .image-container .drop-images #drop_truck {
   opacity: 0;
   -webkit-transform: translateY(-650px);
-          transform: translateY(-650px);
+  transform: translateY(-650px);
 }
 
 @media (min-width: 768px) {
@@ -1448,18 +1409,8 @@ header .navbar .navbar-collapse.collapsing ul {
     margin-bottom: 0px;
     min-height: 460px;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .home-drivers {
-    padding-top: 205px;
-  }
-  .home-drivers h2 {
-    font-size: 60px;
-  }
-  .home-drivers .image-container .drop-images {
-    margin-bottom: 0px;
-    max-width: none;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 }
 
@@ -1484,11 +1435,16 @@ header .navbar .navbar-collapse.collapsing ul {
     font-size: 60px;
   }
   .home-drivers .information-container {
-    padding-right: 130px;
+    padding-right: 110px;
   }
   .home-drivers .image-container .drop-images {
+    margin-bottom: 0px;
+    max-width: none;
     position: absolute;
     left: -85px;
+  }
+  .home-drivers .carousel {
+    padding-right: 50px;
   }
 }
 
