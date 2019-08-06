@@ -184,7 +184,7 @@
     <section class="contact-form">
       <div class="container-fluid custom-container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 col-xl-10 offset-xl-1">
             <p class="questions animated opacity-down" data-scroll="0">If you have any questions please fill the form below or email us and we will respond as soon as possible. Thank you!</p>
           </div>
         </div>
@@ -192,57 +192,64 @@
         <div class="row">
           <div class="col-12 col-lg-8 col-xl-7 offset-xl-1">
             <!-- Form -->
-            <form class="contact-form" action="send-email.php" method="post">
-              <div class="form-group">
-                <input class="form-control input" required="required" type="text" name="first_name" />
-                <label
-                  ><b>First Name <span>*</span></b></label
-                >
-                <div class="border-bottom"></div>
+            <form class="email-form animated opacity-down" data-scroll="0" action="/send-email.php" method="post">
+              <div class="row">
+                <!-- Name -->
+                <div class="col-12 col-lg">
+                  <div class="form-group">
+                    <input class="form-control input" required="required" type="text" name="name" />
+                    <label>Name <span>*</span></label>
+                  </div>
+                </div>
+                <!-- End Name -->
+
+                <!-- Email -->
+                <div class="col-12 col-lg">
+                  <div class="form-group">
+                    <input class="form-control input" required="required" type="email" name="email" />
+                    <label>Email <span>*</span></label>
+                  </div>
+                </div>
+                <!-- End Email -->
               </div>
 
-              <div class="form-group">
-                <input class="form-control input" required="required" type="text" name="last_name" />
-                <label
-                  ><b>Last Name <span>*</span></b></label
-                >
-                <div class="border-bottom"></div>
+              <div class="row">
+                <!-- Address -->
+                <div class="col-12 col-lg">
+                  <div class="form-group">
+                    <input class="form-control input" required="required" type="text" name="address" />
+                    <label>Address <span>*</span></label>
+                  </div>
+                </div>
+                <!-- End Address -->
+
+                <!-- Phone -->
+                <div class="col-12 col-lg">
+                  <div class="form-group">
+                    <input class="form-control input" required="required" type="tel" name="phone" />
+                    <label>Phone <span>*</span></label>
+                  </div>
+                </div>
+                <!-- End Phone -->
               </div>
 
-              <div class="form-group">
-                <input class="form-control input" required="required" type="tel" name="mobile_number" />
-                <label
-                  ><b>Mobile Number <span>*</span></b></label
-                >
-                <div class="border-bottom"></div>
-              </div>
+              <div class="row">
+                <!-- Message -->
+                <div class="col-12">
+                  <div class="form-group">
+                    <textarea class="form-control input text-area" required="required" type="" name="message" rows="3" cols="80"></textarea>
+                    <label>Message <span>*</span></label>
+                  </div>
+                </div>
+                <!-- End Message -->
 
-              <div class="form-group">
-                <input class="form-control input" required="required" type="email" name="email" />
-                <label
-                  ><b>Email <span>*</span></b></label
-                >
-                <div class="border-bottom"></div>
-              </div>
-
-              <div class="form-group">
-                <input class="form-control input" required="required" type="text" name="company" />
-                <label
-                  ><b>Company <span>*</span></b></label
-                >
-                <div class="border-bottom"></div>
-              </div>
-
-              <div class="form-group">
-                <textarea class="form-control input text-area" required="required" type="" name="message" rows="8" cols="80"></textarea>
-                <label
-                  ><b>Message <span>*</span></b></label
-                >
-                <div class="border-bottom"></div>
-              </div>
-
-              <div class="main-button">
-                <button name="submit" type="submit" class="btn btn-general" data-disable-with="<i class='fas fa-spinner fa-spin'></i>"><span>Send Message</span></button>
+                <!-- Send button -->
+                <div class="col-12">
+                  <div class="main-button">
+                    <button name="submit" type="submit" class="btn btn-general" data-disable-with="<i class='fas fa-spinner fa-spin'></i>"><span>Send</span></button>
+                  </div>
+                </div>
+                <!-- End Send button -->
               </div>
             </form>
             <!-- End Form -->
@@ -250,28 +257,28 @@
 
           <div class="col-12 col-lg-3 offset-lg-1 col-xl-2">
             <!-- Renewable Resources -->
-            <div class="contact">
+            <div class="contact animated opacity-down" data-scroll="0">
               <p class="title">Renewable Resources</p>
               <p><a href="mailto:rcardillo@apifw.com" title="rcardillo@apifw.com">rcardillo@apifw.com</a></p>
             </div>
             <!-- End Renewable Resources -->
 
             <!-- Become A New Customer -->
-            <div class="contact">
+            <div class="contact animated opacity-down" data-scroll="0" data-delay="200">
               <p class="title">Become A New Customer</p>
               <p><a href="mailto:customer@apifw.com" title="customer@apifw.com">customer@apifw.com</a></p>
             </div>
             <!-- End Become A New Customer -->
 
             <!-- Questions & Comments -->
-            <div class="contact">
+            <div class="contact animated opacity-down" data-scroll="0" data-delay="400">
               <p class="title">Questions & Comments</p>
               <p><a href="mailto:bcovington@apifw.com" title="bcovington@apifw.com">bcovington@apifw.com</a></p>
             </div>
             <!-- End Questions & Comments -->
 
             <!-- Request For Service -->
-            <div class="contact">
+            <div class="contact animated opacity-down" data-scroll="0" data-delay="600">
               <p class="title">Request For Service</p>
               <p><a href="mailto:service@apifw.com" title="service@apifw.com">service@apifw.com</a></p>
             </div>
@@ -287,11 +294,11 @@
       <div class="container-fluid custom-container">
         <div class="row">
           <div class="col-12">
-            <h2>Our Locations</h2>
+            <h2 class="animated opacity-down" data-scroll="auto">Our Locations</h2>
           </div>
 
           <!-- Fort Worth -->
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg-4 animated opacity-down" data-scroll="auto">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26789.840032799333!2d-97.301203!3d32.931731!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864dd9a2426bbe07%3A0xbea174361202524f!2s3820+Golden+Triangle+Boulevard%2C+Fort+Worth%2C+TX+76244!5e0!3m2!1sen!2sus!4v1565047054492!5m2!1sen!2sus"
               width="100%"
@@ -306,7 +313,7 @@
           <!-- End Fort Worth -->
 
           <!-- Houston -->
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg-4 animated opacity-down" data-scroll="auto" data-delay="200">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27714.1721995716!2d-95.28615300000001!3d29.740854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bc48854193af%3A0xab8fde21421ea795!2s7611+Avenue+N%2C+Houston%2C+TX+77012!5e0!3m2!1sen!2sus!4v1565047092904!5m2!1sen!2sus"
               width="100%"
@@ -321,7 +328,7 @@
           <!-- End Houston -->
 
           <!-- San Antonio -->
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg-4 animated opacity-down" data-scroll="auto" data-delay="400">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27797.273184197507!2d-98.411109!3d29.438756999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865cf41bb0e04005%3A0x77476b4bb0ba13b2!2s4318+Director+Dr%2C+San+Antonio%2C+TX+78219!5e0!3m2!1sen!2sus!4v1565047121830!5m2!1sen!2sus"
               width="100%"
@@ -414,7 +421,6 @@
       </section>
     </footer>
 
-    <!-- Notifications -->
     <!-- Notifications -->
     <div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
       <div class="vertical-alignment-helper">
