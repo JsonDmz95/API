@@ -8,6 +8,43 @@ body {
   font-style: normal;
   font-size: $body-font-size;
   color: $text-color;
+
+  &.overflow-hidden {
+    overflow: hidden;
+  }
+
+  #site-preloader {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2000;
+    background-color: $text-color;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    img {
+      -webkit-animation: imageOpacity 2s ease-in infinite;
+      animation: imageOpacity 2s ease-in infinite;
+      width: 90%;
+      max-width: 480px;
+    }
+  }
 }
 
 h1,
@@ -20,14 +57,13 @@ h5 {
   text-transform: none;
 }
 
-h2{
+h2 {
   font-size: 60px;
 }
 
-h3{
+h3 {
   font-size: 30px;
 }
-
 
 /// Basic styles for text
 p {
@@ -50,10 +86,6 @@ a {
 }
 
 /// Text selection colors
-::-moz-selection {
-  background: $primary-color;
-  color: $white;
-}
 
 ::selection {
   background: $primary-color;
@@ -67,7 +99,26 @@ a {
   }
 }
 
-@media (min-width: 768px) {
-  h1 {
+@-webkit-keyframes imageOpacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes imageOpacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

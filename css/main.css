@@ -8,6 +8,43 @@ body {
   color: #1d283a;
 }
 
+body.overflow-hidden {
+  overflow: hidden;
+}
+
+body #site-preloader {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 2000;
+  background-color: #1d283a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body #site-preloader img {
+  -webkit-animation: imageOpacity 2s ease-in infinite;
+  animation: imageOpacity 2s ease-in infinite;
+  width: 90%;
+  max-width: 480px;
+}
+
 h1,
 h2,
 h3,
@@ -56,6 +93,30 @@ a:hover, a:active, a:focus {
 
 .container-fluid.custom-container {
   max-width: 1678px;
+}
+
+@-webkit-keyframes imageOpacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes imageOpacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .clearfix::after {
