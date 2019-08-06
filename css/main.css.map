@@ -21,6 +21,7 @@
         "../scss/pages/_contact.scss",
         "../scss/pages/_gallery.scss",
         "../scss/pages/_404.scss",
+        "../scss/pages/_browsers.scss",
         "../scss/themes/_default.scss"
     ],
     "names": [],
