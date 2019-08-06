@@ -9,11 +9,20 @@ function move() {
     y += (lFollowY - y) * friction;
 
     translate = 'translate(' + x + 'px, ' + y + 'px)';
+    translateInv = 'translate(' + x*-1 + 'px, ' + y*-1 + 'px)';
 
     $('.move').css({
         '-webit-transform': translate,
         '-moz-transform': translate,
         'transform': translate,
+        'transition': 'none'
+    });
+
+
+    $('.move-inversed').css({
+        '-webit-transform': translateInv,
+        '-moz-transform': translateInv,
+        'transform': translateInv,
         'transition': 'none'
     });
 
