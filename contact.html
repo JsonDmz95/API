@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <title>Alliance Processors Inc. - Services</title>
+    <title>Alliance Processors Inc. - Contact</title>
     <meta name="description" content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero unde ipsa nesciunt, asperiores blanditiis." />
     <link rel="icon" href="img/favicon.png" />
 
@@ -46,7 +46,7 @@
                         <div class="circle"></div>
                       </div>
 
-                      <a href="/" class="nav-link" title="Home">Home<span class="sr-only">(current)</span></a>
+                      <a href="/" class="nav-link" title="Home">Home</a>
                     </li>
 
                     <li class="nav-item">
@@ -56,7 +56,7 @@
                         <div class="circle"></div>
                       </div>
 
-                      <a href="/about.html" class="nav-link" title="About">About</a>
+                      <a href="/about.html" class="nav-link" title="About">About<span class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item">
@@ -69,7 +69,7 @@
                       <a href="/gallery.html" class="nav-link" title="Gallery">Gallery</a>
                     </li>
 
-                    <li class="nav-item active">
+                    <li class="nav-item">
                       <div class="active-animation">
                         <div class="circle"></div>
                         <div class="circle"></div>
@@ -79,7 +79,7 @@
                       <a href="/services.html" class="nav-link" title="Services">Services</a>
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item active">
                       <div class="active-animation">
                         <div class="circle"></div>
                         <div class="circle"></div>
@@ -171,7 +171,7 @@
         <div class="container-fluid custom-container">
           <div class="row justify-content-center">
             <div class="col-12 col-xl-6">
-              <h1 class="text-center animated opacity-down" data-scroll="0">Services</h1>
+              <h1 class="text-center animated opacity-down" data-scroll="0">Contact Us</h1>
             </div>
           </div>
         </div>
@@ -180,70 +180,171 @@
     </section>
     <!-- End Internal banner -->
 
-    <!-- We provide cooking oil -->
-    <section class="we-provide">
-      <div class="container-fluid custom-container">
-        <div class="row">
-          <div class="col-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-            <p class="text-big animated opacity" data-scroll="0">We provide cooking oil collection and recycling services to thousands of satisfied customers across Texas. Also, we manufacture biodiesel from the recycled cooking oil we receive.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END OF We provide cooking oil -->
-
-    <!-- Recycling -->
-    <section class="service recycling">
-      <div class="img-container">
-        <img src="img/recycling.svg" alt="Recycling Icon" class="img-fluid service-img animated scale" data-scroll="auto" data-delay="1000" />
-      </div>
-      <div class="container-fluid custom-container">
-        <div class="row text-right">
-          <div class="col-12 col-xl-10 offset-xl-1">
-            <h2 class="service-title animated opacity-down" data-scroll="auto">Recycling</h2>
-            <p class="service-text animated opacity-up" data-scroll="auto">
-              Alliance Processors, Inc is dedicated to service. Our services include properly evaluating the customers' needs. Alliance supplies quality recycling services to restaurants, restaurant chains, food manufacturers, franchises, small
-              businesses, government and military installations, theme parks, sports complexes and arenas. In servicing so many different facilities, Alliance has developed numerous containment systems to meet each and every varied need. We can
-              correctly evaluate the right equipment for each store instead of one size fits all. This enables the customer to always be able to dispose of the used cooking oil. In many cases, city governments require a double containment system to
-              insure against any leakages. Alliance has developed a container that meets these strict requirements.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END OF Recycling -->
-
-    <!-- biodiesel -->
-    <section class="service biodiesel">
-      <div class="img-container">
-        <img src="img/biodiesel.svg" alt="Biodiesel" class="img-fluid service-img animated opacity-left" data-scroll="auto" data-delay="1000" />
-      </div>
+    <!-- Contact form -->
+    <section class="contact-form">
       <div class="container-fluid custom-container">
         <div class="row">
           <div class="col-12 col-xl-10 offset-xl-1">
-            <h2 class="service-title animated opacity-down" data-scroll="auto">Biodiesel</h2>
-            <p class="service-text animated opacity-up" data-scroll="auto">
-              Alliance Processors recycles restaurant grease and turns it into a substance that is used to create biodiesel. Biodiesel is a nontoxic, biodegradable, clean burning fuel for diesel engines made from domestically produced, renewable fats
-              and oils. Biodiesel has no sulfur or aromatic compounds and meets the EPA's ultra low sulfur diesel fuel protocol.
-            </p>
+            <p class="questions animated opacity-down" data-scroll="0">If you have any questions please fill the form below or email us and we will respond as soon as possible. Thank you!</p>
+          </div>
+        </div>
 
-            <h3 class=" animated opacity-up" data-scroll="auto">The Benefits:</h3>
-            <ul class="benefits-list animated opacity-up" data-scroll="auto">
-              <li>Demand driver for alternative energy</li>
-              <li>Renewable Fuel Standards - Energy Policy Act of 2005</li>
-              <li>Reduction of foreign oil dependence</li>
-              <li>Environmentally friendly</li>
-              <li>Burns substantially cleaner than petroleum based diesel fuel</li>
-              <li>Biodiesel has lower sulfur content than petrodiesel</li>
-              <li>Reduces greenhouse gas emissions such as CO2, as well as carbon monoxide (CO), particulate matter (PM), and hydrocarbon (HC) emissions.</li>
-              <li>Easy adoption</li>
-              <li>Compatible with existing engines and fuel distribution infrastructure without modification</li>
-            </ul>
+        <div class="row">
+          <div class="col-12 col-lg-8 col-xl-7 offset-xl-1">
+            <!-- Form -->
+            <form class="email-form animated opacity-down" data-scroll="0" action="/send-email.php" method="post">
+              <div class="row">
+                <!-- Name -->
+                <div class="col-12 col-lg">
+                  <div class="form-group">
+                    <input class="form-control input" required="required" type="text" name="name" />
+                    <label>Name <span>*</span></label>
+                  </div>
+                </div>
+                <!-- End Name -->
+
+                <!-- Email -->
+                <div class="col-12 col-lg">
+                  <div class="form-group">
+                    <input class="form-control input" required="required" type="email" name="email" />
+                    <label>Email <span>*</span></label>
+                  </div>
+                </div>
+                <!-- End Email -->
+              </div>
+
+              <div class="row">
+                <!-- Address -->
+                <div class="col-12 col-lg">
+                  <div class="form-group">
+                    <input class="form-control input" required="required" type="text" name="address" />
+                    <label>Address <span>*</span></label>
+                  </div>
+                </div>
+                <!-- End Address -->
+
+                <!-- Phone -->
+                <div class="col-12 col-lg">
+                  <div class="form-group">
+                    <input class="form-control input" required="required" type="tel" name="phone" />
+                    <label>Phone <span>*</span></label>
+                  </div>
+                </div>
+                <!-- End Phone -->
+              </div>
+
+              <div class="row">
+                <!-- Message -->
+                <div class="col-12">
+                  <div class="form-group">
+                    <textarea class="form-control input text-area" required="required" type="" name="message" rows="3" cols="80"></textarea>
+                    <label>Message <span>*</span></label>
+                  </div>
+                </div>
+                <!-- End Message -->
+
+                <!-- Send button -->
+                <div class="col-12">
+                  <div class="main-button">
+                    <button name="submit" type="submit" class="btn btn-general" data-disable-with="<i class='fas fa-spinner fa-spin'></i>"><span>Send</span></button>
+                  </div>
+                </div>
+                <!-- End Send button -->
+              </div>
+            </form>
+            <!-- End Form -->
+          </div>
+
+          <div class="col-12 col-lg-3 offset-lg-1 col-xl-2">
+            <!-- Renewable Resources -->
+            <div class="contact animated opacity-down" data-scroll="0">
+              <p class="title">Renewable Resources</p>
+              <p><a href="mailto:rcardillo@apifw.com" title="rcardillo@apifw.com">rcardillo@apifw.com</a></p>
+            </div>
+            <!-- End Renewable Resources -->
+
+            <!-- Become A New Customer -->
+            <div class="contact animated opacity-down" data-scroll="0" data-delay="200">
+              <p class="title">Become A New Customer</p>
+              <p><a href="mailto:customer@apifw.com" title="customer@apifw.com">customer@apifw.com</a></p>
+            </div>
+            <!-- End Become A New Customer -->
+
+            <!-- Questions & Comments -->
+            <div class="contact animated opacity-down" data-scroll="0" data-delay="400">
+              <p class="title">Questions & Comments</p>
+              <p><a href="mailto:bcovington@apifw.com" title="bcovington@apifw.com">bcovington@apifw.com</a></p>
+            </div>
+            <!-- End Questions & Comments -->
+
+            <!-- Request For Service -->
+            <div class="contact animated opacity-down" data-scroll="0" data-delay="600">
+              <p class="title">Request For Service</p>
+              <p><a href="mailto:service@apifw.com" title="service@apifw.com">service@apifw.com</a></p>
+            </div>
+            <!-- End Request For Service -->
           </div>
         </div>
       </div>
     </section>
-    <!-- END OF biodiesel -->
+    <!-- End Contact form -->
+
+    <!-- Our Locations -->
+    <section class="contact-locations">
+      <div class="container-fluid custom-container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="animated opacity-down" data-scroll="auto">Our Locations</h2>
+          </div>
+
+          <!-- Fort Worth -->
+          <div class="col-12 col-lg-4 animated opacity-down" data-scroll="auto">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26789.840032799333!2d-97.301203!3d32.931731!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864dd9a2426bbe07%3A0xbea174361202524f!2s3820+Golden+Triangle+Boulevard%2C+Fort+Worth%2C+TX+76244!5e0!3m2!1sen!2sus!4v1565047054492!5m2!1sen!2sus"
+              width="100%"
+              height="520"
+              frameborder="0"
+              style="border:0"
+              allowfullscreen
+            ></iframe>
+
+            <p class="location">Fort Worth</p>
+          </div>
+          <!-- End Fort Worth -->
+
+          <!-- Houston -->
+          <div class="col-12 col-lg-4 animated opacity-down" data-scroll="auto" data-delay="200">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27714.1721995716!2d-95.28615300000001!3d29.740854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bc48854193af%3A0xab8fde21421ea795!2s7611+Avenue+N%2C+Houston%2C+TX+77012!5e0!3m2!1sen!2sus!4v1565047092904!5m2!1sen!2sus"
+              width="100%"
+              height="520"
+              frameborder="0"
+              style="border:0"
+              allowfullscreen
+            ></iframe>
+
+            <p class="location">Houston</p>
+          </div>
+          <!-- End Houston -->
+
+          <!-- San Antonio -->
+          <div class="col-12 col-lg-4 animated opacity-down" data-scroll="auto" data-delay="400">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27797.273184197507!2d-98.411109!3d29.438756999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865cf41bb0e04005%3A0x77476b4bb0ba13b2!2s4318+Director+Dr%2C+San+Antonio%2C+TX+78219!5e0!3m2!1sen!2sus!4v1565047121830!5m2!1sen!2sus"
+              width="100%"
+              height="520"
+              frameborder="0"
+              style="border:0"
+              allowfullscreen
+            ></iframe>
+
+            <p class="location">San Antonio</p>
+          </div>
+          <!-- End San Antonio -->
+        </div>
+      </div>
+    </section>
+    <!-- End Our Locations -->
 
     <!-- We utilize only the highest standards in developing quality products -->
     <section class="prefooter">
@@ -265,7 +366,7 @@
     <footer>
       <section class="footer-top">
         <div class="container-fluid custom-container">
-          <div class="row justify-content-center">
+          <div class="row">
             <!-- Logo -->
             <div class="col-12 col-lg-3 offset-lg-1">
               <div class="logo">
@@ -320,6 +421,44 @@
       </section>
     </footer>
 
+    <!-- Notifications -->
+    <div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+      <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+          <div class="modal-content">
+            <div class="modal-body">
+              <p><i class="fa fa-check-circle" aria-hidden="true"></i></p>
+
+              <h2>Thank you for your Message!</h2>
+              <p>Your message has been received and its been sent to our team</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="btn btn-general" data-dismiss="modal">Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+      <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+          <div class="modal-content">
+            <div class="modal-body">
+              <p><i class="fa fa-times-circle" aria-hidden="true"></i></p>
+
+              <h2>Oops!</h2>
+              <p>It Seems that something went wrong</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="btn btn-general" data-dismiss="modal">Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Notifications -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -336,5 +475,12 @@
 
     <!-- Main -->
     <script src="js/main.js"></script>
+
+    <!-- Validate input -->
+    <script src="js/material-input.js"></script>
+
+    <!-- Show notifications -->
+    <script src="js/dentist.js"></script>
+    <script src="js/notifications.js"></script>
   </body>
 </html>
