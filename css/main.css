@@ -904,6 +904,10 @@ footer {
   padding-top: 40px;
 }
 
+.footer-top .contact .questions {
+  padding-top: 30px;
+}
+
 .footer-bottom {
   padding-top: 10px;
   padding-bottom: 20px;
@@ -965,11 +969,23 @@ footer {
   .footer-top .emergency {
     padding-top: 0px;
   }
+  .footer-top .contact .questions {
+    padding-top: 15px;
+  }
   .footer-bottom {
-    padding-top: 10px;
+    padding-top: 30px;
     padding-bottom: 20px;
   }
   .footer-bottom p {
+    text-align: left;
+  }
+  .footer-bottom p.created {
+    text-align: right;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-bottom p.created {
     text-align: left;
   }
 }
