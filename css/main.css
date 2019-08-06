@@ -2254,6 +2254,7 @@ footer {
 
 .wrap-404 {
   padding-top: 50px;
+  padding-bottom: 80px;
   text-align: center;
 }
 
@@ -2307,7 +2308,7 @@ footer {
   }
   .wrap-404 {
     padding-top: 100px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
     text-align: left;
   }
 }
