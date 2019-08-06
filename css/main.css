@@ -2082,6 +2082,13 @@ footer {
   height: 60px;
 }
 
+.contact-form .email-form .form-group textarea:focus + grammarly-extension + label, .contact-form .email-form .form-group textarea.with-value + grammarly-extension + label {
+  font-size: 12px;
+  top: -8px;
+  z-index: 2;
+  color: #1976d2;
+}
+
 .contact-form .email-form .form-group input,
 .contact-form .email-form .form-group textarea {
   font-size: 18px;

@@ -64,6 +64,21 @@
         height: 60px;
       }
 
+      // Fixing Grammarly bug
+      textarea {
+        &:focus,
+        &.with-value {
+          & {
+            + grammarly-extension + label {
+              font-size: 12px;
+              top: -8px;
+              z-index: 2;
+              color: #1976d2;
+            }
+          }
+        }
+      }
+
       input,
       textarea {
         font-size: 18px;
