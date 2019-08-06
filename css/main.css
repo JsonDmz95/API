@@ -2246,4 +2246,69 @@ footer {
     max-width: none;
   }
 }
+
+.internal-banner.banner-404 {
+  height: 350px;
+  background-position: bottom center;
+}
+
+.wrap-404 {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.wrap-404 .text-content {
+  margin-bottom: 60px;
+}
+
+.wrap-404 .title-404 {
+  font-size: 150px;
+  line-height: 1;
+  margin-top: 0px;
+  font-weight: 900;
+  text-shadow: 0px 5px 10px rgba(29, 40, 58, 0.2);
+  margin-bottom: 10px;
+  letter-spacing: 7.5px;
+}
+
+.wrap-404 .something {
+  font-size: 40px;
+  margin-top: 0px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.wrap-404 .text-404 {
+  margin-bottom: 30px;
+  letter-spacing: 0.9px;
+}
+
+.wrap-404 .btn {
+  width: 248px;
+}
+
+@media (min-width: 768px) {
+  .wrap-404 {
+    padding-top: 100px;
+    text-align: center;
+  }
+  .wrap-404 .text-content {
+    margin-bottom: 100px;
+  }
+  .wrap-404 .title-404 {
+    font-size: 200px;
+    letter-spacing: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .internal-banner.banner-404 {
+    height: 450px;
+  }
+  .wrap-404 {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    text-align: left;
+  }
+}
 /*# sourceMappingURL=main.css.map */
