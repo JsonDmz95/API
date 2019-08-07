@@ -11,11 +11,13 @@
     font-size: 18px;
 
     &.capital-paragraph {
-      &::first-letter {
-        font-size: 100px;
-        line-height: 0.5;
-        margin-top: 5px;
-        float: left;
+      .capitalize-letter {
+        &::first-letter {
+          font-size: 100px;
+          line-height: 0.5;
+          margin-top: 5px;
+          float: left;
+        }
       }
     }
   }

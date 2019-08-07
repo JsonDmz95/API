@@ -1732,7 +1732,7 @@ footer {
 }
 
 .internal-banner {
-  background: url("../img/internal-banner.png") #fff no-repeat center center;
+  background: url("../img/internal-banner.png") #fff no-repeat center bottom;
   background-size: cover;
   height: 500px;
   position: relative;
@@ -1808,7 +1808,7 @@ footer {
   font-size: 18px;
 }
 
-.about-we-are p.capital-paragraph::first-letter {
+.about-we-are p.capital-paragraph .capitalize-letter::first-letter {
   font-size: 100px;
   line-height: 0.5;
   margin-top: 5px;
