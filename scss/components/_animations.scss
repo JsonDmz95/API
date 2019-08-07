@@ -1,18 +1,36 @@
 /*KEYFRAMES*/
-@keyframes moveDown {
+@-webkit-keyframes moveDown {
   from {
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
   50% {
+    -webkit-transform: translateY(10px);
     transform: translateY(10px);
   }
   to {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+@keyframes moveDown {
+  from {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
 }
 
 /*CLASES*/
 .animated {
+  -webkit-transition: all ease 1s;
   transition: all ease 1s;
   &.opacity {
     opacity: 0;
@@ -23,62 +41,76 @@
 
   &.opacity-up {
     opacity: 0;
+    -webkit-transform: translateY(50px);
     transform: translateY(50px);
 
     &.in {
       opacity: 1;
+      -webkit-transform: translateY(0px);
       transform: translateY(0px);
     }
   }
 
   &.opacity-arrow {
     opacity: 0;
+    -webkit-transform: translateY(-50px) rotate(90deg);
     transform: translateY(-50px) rotate(90deg);
 
     &.in {
       opacity: 1;
+      -webkit-transform: translateY(0px) rotate(90deg);
       transform: translateY(0px) rotate(90deg);
     }
   }
 
   &.opacity-down {
     opacity: 0;
+    -webkit-transform: translateY(-50px);
     transform: translateY(-50px);
 
     &.in {
       opacity: 1;
+      -webkit-transform: translateY(0px);
       transform: translateY(0px);
     }
   }
 
   &.opacity-right {
     opacity: 0;
+    -webkit-transform: translateX(-50px);
     transform: translateX(-50px);
 
     &.in {
       opacity: 1;
+      -webkit-transform: translateX(0px);
       transform: translateX(0px);
     }
   }
 
   &.opacity-left {
     opacity: 0;
+    -webkit-transform: translateX(50px);
     transform: translateX(50px);
 
     &.in {
       opacity: 1;
+      -webkit-transform: translateX(0px);
       transform: translateX(0px);
     }
   }
 
   &.scale {
+    -webkit-transform: scale(0);
     transform: scale(0);
     &.in {
+      -webkit-transform: scale(1);
       transform: scale(1);
     }
 
     &.uni-view {
+      -webkit-transform-origin: center;
       transform-origin: center;
+      -webkit-transition: all ease 0.5s;
       transition: all ease 0.5s;
     }
   }
@@ -87,10 +119,12 @@
 @media (min-width: 768px) {
   .animated.opacity-arrow {
     opacity: 0;
+    -webkit-transform: translateX(-50px) rotate(0deg);
     transform: translateX(-50px) rotate(0deg);
 
     &.in {
       opacity: 1;
+      -webkit-transform: translateX(0px) rotate(0deg);
       transform: translateX(0px) rotate(0deg);
     }
   }

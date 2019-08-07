@@ -6,25 +6,25 @@
 /// @author Harry Roberts
 /// @param{Bool} $self [false] - Whether or not to include current selector
 /// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
-@mixin on-event($self: false){
-  @if $self{
+@mixin on-event($self: false) {
+  @if $self {
     &,
     &:hover,
     &:active,
-    &:focus{
+    &:focus {
       @content;
     }
-  } @else{
+  } @else {
     &:hover,
     &:active,
-    &:focus{
+    &:focus {
       @content;
     }
   }
 }
 
 /// Flex setup for navigation elements. Apply this on sm view (768px and up)
-@mixin flex-navigation{
+@mixin flex-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,7 +41,7 @@
   align-items: stretch;
 }
 
-@mixin flex-child{
+@mixin flex-child {
   display: block;
   -webkit-box-flex: 1;
   -ms-flex: 1 0 auto;
@@ -49,9 +49,17 @@
 }
 
 /// Mixin for Placeholder
-@mixin placeholder{
-  &::-webkit-input-placeholder{@content}
-  &:-moz-placeholder{@content}
-  &::-moz-placeholder{@content}
-  &:-ms-input-placeholder{@content}
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
 }

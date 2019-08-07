@@ -20,6 +20,7 @@
 
 footer {
   background-color: $secondary-color;
+  -webkit-box-shadow: 0px -20px 40px rgba($text-color, 0.3);
   box-shadow: 0px -20px 40px rgba($text-color, 0.3);
 }
 
