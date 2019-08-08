@@ -16,9 +16,7 @@ if (isset($_POST["submit"])) {
     $text = "This is a self-generated message from the Contact Us form." . $lineBreak . "Name: " . $name . $lineBreak . "Email: " . $email . $lineBreak . "Address: " . $address . $lineBreak . "Phone: " . $phone . $lineBreak . "Message: " . $message . $lineBreak . "Regards," . $lineBreak . "Alliance Processors Inc. Website";
 
 
-    // $to = "rcardillo@apifw.com, customer@apifw.com, service@apifw.com";
-
-    $to = "reymundotenorio@gmail.com";
+    $to = "rcardillo@apifw.com, customer@apifw.com, service@apifw.com";
     $from = "website@apifw.com";
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";

@@ -2333,4 +2333,29 @@ footer {
     text-align: left;
   }
 }
+
+.browserupgrade {
+  background-color: #ff6f61;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 5px;
+  margin: 0px;
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 3000;
+}
+
+.browserupgrade a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .browserupgrade {
+    display: block;
+  }
+}
 /*# sourceMappingURL=main.css.map */
