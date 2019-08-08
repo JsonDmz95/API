@@ -12,12 +12,12 @@
 
     &.capital-paragraph {
       .capitalize-letter {
-        &::first-letter {
-          font-size: 100px;
-          line-height: 0.5;
-          margin-top: 5px;
-          float: left;
-        }
+        // &::first-letter {
+        //   font-size: 100px;
+        //   line-height: 0.5;
+        //   margin-top: 5px;
+        //   float: left;
+        // }
       }
     }
   }

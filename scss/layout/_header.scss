@@ -615,7 +615,8 @@ header {
   // basic header break
   header {
     .navbar-brand {
-      margin-right: 25px;
+      // margin-right: 25px;
+      margin-right: 80px;
     }
 
     .navbar {
@@ -712,7 +713,8 @@ header {
 @media (min-width: 1400px) {
   header {
     .navbar-brand {
-      margin-right: 152px;
+      // margin-right: 152px;
+      margin-right: 150px;
     }
 
     .navbar {
